@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyPurseActivity">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/backs"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/back"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="@string/Mypurse"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/purse"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/AccountBalance"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#171F24"
+        android:textSize="14sp"
+        />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#171F24"
+                android:textSize="@dimen/btnTextSiz"
+                android:textStyle="bold"
+                android:text="@string/moenys"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#171F24"
+                android:textSize="@dimen/btnTextSiz"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/Recharge"
+        android:layout_marginTop="80dp"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/loginbak"
+        >-->
+
+        <com.gigamole.library.ShadowLayout
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sl_shadowed="true"
+            app:sl_shadow_angle="45"
+            app:sl_shadow_radius="5dp"
+            app:sl_shadow_distance="3dp"
+            app:sl_shadow_color="#6063B15E"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:text="@string/Recharge"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/login_buttons"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+        </com.gigamole.library.ShadowLayout>
+ <!--   </androidx.cardview.widget.CardView>-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/withdraw"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/white_recharge_bg"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            android:text="@string/withDraw"
+            android:gravity="center"
+            android:textColor="#7D7D7D"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/withdraws"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/save" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Deposit"
+                            android:textColor="#0B0B0B"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moenys"
+                            android:textColor="#0B0B0B"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/deposits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#0B0B0B"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/withdraw"
+                        android:textColor="#64B15E"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                   android:id="@+id/cardlist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/card" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/CreditCard"
+                        android:textColor="#0B0B0B"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/details"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/transaction" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/details"
+                        android:textColor="#0B0B0B"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.zheng.liuju.view.DragImageView
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home"/>
+</RelativeLayout>

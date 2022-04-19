@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zheng.liuju.view.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadowed="true"
+            app:sl_shadow_angle="45"
+            app:sl_shadow_radius="5dp"
+            app:sl_shadow_distance="3dp"
+            app:sl_shadow_color="#6063B15E"
+            >
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/credit_card_red">
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/cards"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/card_list_bg">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/visacard"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/cardName"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"/>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@id/cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cardNumber"/>
+                    <TextView
+
+                        android:id="@+id/cardnumber"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expirationDate"/>
+
+                    <TextView
+                       android:layout_marginBottom="20dp"
+                        android:id="@+id/expiration"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </com.gigamole.library.ShadowLayout>
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/delete_button"
+                android:clickable="true"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/deletes"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.zheng.liuju.view.SwipeLayout>
+</LinearLayout>

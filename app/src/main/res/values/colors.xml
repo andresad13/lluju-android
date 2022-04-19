@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="loginbak">#2B6F2A</color>
+    <color name="loginbaks">#F45344</color>
+    <color name="linecolor">#63B15E</color>
+    <color name="loginbakbutton">#602B6F2A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="rloginbak">#E4FFE4</color>
+    <color name="loginTextColors">#24272B</color>
+    <color name="loginTextColor">#7224272B</color>
+    <color name="loginTextHint">#724B5461</color>
+    <color name="loginS">#BCBEC2</color>
+    <color name="black">#000000</color>
+    <color name="mainTextColor">#0B0B0B</color>
+    <color name="jj">#FFeaeaea</color>
+    <color name="recharge">#F45344</color>
+</resources>

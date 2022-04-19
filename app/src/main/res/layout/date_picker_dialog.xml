@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+        android:orientation="horizontal"
+         android:paddingTop="10dp" >
+
+         <LinearLayout
+             android:background="@drawable/customer_service"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:orientation="vertical"
+             android:padding="5dip" >
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/selectTime"
+                android:layout_marginTop="20dp"
+                android:textColor="#363636"/>
+                 <ImageView
+                     android:id="@+id/del"
+                     android:layout_marginTop="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@mipmap/decte"
+                     android:layout_marginRight="10dp"
+                     android:layout_alignParentRight="true"/>
+             </RelativeLayout>
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#EDEDED"
+                 android:layout_marginTop="20dp"/>
+             <DatePicker
+                 android:layout_marginTop="30dp"
+                 style="@android:style/Widget.DatePicker"
+                 android:id="@+id/datePickerStart"
+                 android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                 android:calendarViewShown="false" />
+
+             <TextView
+                 android:id="@+id/choose"
+                 android:layout_marginTop="40dp"
+                 android:gravity="center"
+                 android:background="@drawable/common"
+                 android:layout_width="170dp"
+                 android:layout_height="44dp"
+                 android:text="@string/determine"
+                 android:textSize="15dp"
+                 android:layout_marginBottom="10dp"
+                 android:textColor="@color/white"/>
+         </LinearLayout>
+
+
+     </LinearLayout>

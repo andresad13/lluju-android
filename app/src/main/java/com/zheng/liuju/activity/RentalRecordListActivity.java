@@ -1,0 +1,16 @@
+package com.zheng.liuju.activity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import com.zheng.liuju.R;
+
+public class RentalRecordListActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_rental_record_list);
+    }
+}

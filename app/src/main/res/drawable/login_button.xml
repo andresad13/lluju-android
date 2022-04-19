@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 填充颜色 -->
+    <solid android:color="@color/white" />
+    <!-- 设置四个角为弧形,指定弧形半径 -->
+    <corners android:radius="30dp" />
+    <!-- 设置按钮边框与文字之间间隔  -->
+
+</shape>

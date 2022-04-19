@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RentalRecordActivity"
+   >
+    <com.zheng.liuju.view.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:titleText="@string/RentalRecords"/>
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+
+
+
+
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">-->
+
+   <!--<com.haibin.calendarview.CalendarLayout
+       android:layout_marginTop="80dp"
+       android:id="@+id/calendarLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#fff"
+       android:orientation="vertical"
+       app:default_status="expand"
+       app:calendar_content_view_id="@+id/nestedScrollView"
+     app:calendar_show_mode="both_month_week_view" >
+       &lt;!&ndash;  &ndash;&gt;
+       <com.haibin.calendarview.CalendarView
+           android:id="@+id/calendarView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#fff"
+           app:lunar_text_size="10sp"
+           app:current_day_lunar_text_color="#ff0000"
+           app:current_day_text_color="#ff0000"
+           app:current_month_lunar_text_color="#CFCFCF"
+           app:current_month_text_color="#333333"
+
+           app:max_year="2050"
+           app:max_year_day="31"
+           app:max_year_month="12"
+           app:min_year="2008"
+           app:min_year_day="1"
+           app:min_year_month="1"
+           app:month_view_show_mode="mode_fix"
+           app:other_month_lunar_text_color="#e1e1e1"
+           app:other_month_text_color="#e1e1e1"
+           app:scheme_lunar_text_color="#CFCFCF"
+           app:scheme_text="假"
+           app:scheme_text_color="#333"
+           app:scheme_theme_color="#128c4b"
+           app:selected_lunar_text_color="#FFFFFF"
+           app:selected_text_color="#FFFFFF"
+           app:selected_theme_color="@color/loginbak"
+           app:week_background="#fff"
+           app:week_bar_height="46dp"
+           app:week_line_background="#00000000"
+           app:week_line_margin="16dp"
+           app:week_start_with="sun"
+           app:week_text_size="10sp"
+           app:year_view_background="#f6f6f6"
+           app:year_view_day_text_color="#333333"
+           app:year_view_day_text_size="8sp"
+           app:year_view_month_text_color="#000000"
+           app:year_view_month_text_size="20sp"
+           app:year_view_scheme_color="#f17706"
+           app:year_view_week_height="0dp"
+           app:year_view_week_text_color="#666666"
+           app:month_view="com.zhengde.tanc.custom.CustomMonthView"
+           app:week_bar_view="com.zhengde.tanc.custom.CustomWeekBar"
+
+           app:year_view_week_text_size="7sp" />
+
+   </com.haibin.calendarview.CalendarLayout>
+<ImageView
+    android:layout_below="@id/calendarLayout"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/expand"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/bottom"
+    android:layout_marginBottom="17dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/srp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.zhengde.tanc.view.PullToRefreshListView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/rentlist"
+                    android:listSelector="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null">
+
+                </com.zhengde.tanc.view.PullToRefreshListView>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>-->
+    <FrameLayout
+
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/view_no_data"
+            />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_marginTop="140dp"
+            android:id="@+id/srp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.zheng.liuju.view.PullToRefreshListView
+                android:layoutAnimation="@anim/anim_listview_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/rentlist"
+                android:listSelector="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </com.zheng.liuju.view.PullToRefreshListView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<View
+    android:visibility="gone"
+    android:id="@+id/view"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/record_bg">
+            <com.zheng.liuju.views.WeekColumnView
+
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" />
+
+
+
+            <com.zheng.liuju.views.ExpCalendarView
+                android:id="@+id/calendar_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity"
+                />
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#33CCCCCC"/>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/scelt"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/left"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/YearMonthTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#FF000000"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/right"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_expandIV"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical">
+         <ImageView
+             android:layout_centerInParent="true"
+                android:id="@+id/backss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/bottom" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+<ImageView
+
+    android:id="@+id/filters"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/filter"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    />
+    <com.zheng.liuju.view.DragImageView
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home"/>
+</RelativeLayout>

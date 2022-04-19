@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_marginTop="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+
+        android:id="@+id/lightning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lightning"/>
+<TextView
+    android:layout_toRightOf="@id/lightning"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/OrderStatus"
+    android:layout_marginLeft="20dp"
+    android:textColor="#FF000000"
+    android:textSize="16sp"
+    />
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:textColor="#FF000000"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_recharge_bg">
+   <TextView
+       android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OrderNumber"
+       android:textColor="#FF000000"
+       android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/orderNunber"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:textColor="#FF575757"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RentalTime"
+            android:textColor="#FF000000"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+           android:id="@+id/time"
+            android:textColor="#FF575757"/>
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RentalBusiness"
+            android:textColor="#FF000000"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/RentalBusiness"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:textColor="#FF575757"/>
+    </LinearLayout>
+</LinearLayout>

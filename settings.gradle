@@ -1,0 +1,1 @@
+include ':app', ':acp', ':lib-zxing', ':takephoto_library', ':multipleimageselect', 'calendarview', ':paytabs_sdk-v4.0.0'

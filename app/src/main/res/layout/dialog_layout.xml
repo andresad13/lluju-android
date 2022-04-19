@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/commons">
+    <!--对话框标题区域-->
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:id="@+id/layout_title"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <!--对话框横线-->
+    <View
+        android:layout_width="280dp"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginBottom="10dp"/>
+    <!--对话框按钮区域-->
+    <RelativeLayout
+        android:id="@+id/bottomoll"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_title">
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+            <!--取消按钮-->
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/determine"
+
+                android:background="@null"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#efefef"/>
+            <!--退出按钮-->
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:background="@null"
+               />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

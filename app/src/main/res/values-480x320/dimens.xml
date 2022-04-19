@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnTextSiz">16sp</dimen>
+    <dimen name="loginTextSiz">15sp</dimen>
+    <dimen name="bitSize">250</dimen>
+</resources>

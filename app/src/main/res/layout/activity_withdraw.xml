@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.WithdrawActivity"
+    android:background="#f9f9f9">
+<com.zheng.liuju.view.TitleView
+    android:id="@+id/title"
+    app:titleText="@string/withDraw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/withdrawbg"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/withDrawTip"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#212121"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/withdraw"
+                android:background="@null"
+                android:layout_width="200dp"
+                android:hint="@string/withDrawalAmount"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:layout_height="30dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="@color/loginbak"
+                app:cardCornerRadius="13dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    android:text="@string/withdrawAll"
+    android:textSize="13sp"
+    android:layout_gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#D9D9D9"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:textSize="13sp"
+    android:textColor="#898989"
+    android:layout_marginTop="20dp"
+    android:text="@string/withDrawTips"
+    android:layout_marginBottom="35dp"/>
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <com.gigamole.library.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sl_shadowed="true"
+            app:sl_shadow_angle="45"
+            app:sl_shadow_radius="5dp"
+            app:sl_shadow_distance="3dp"
+            app:sl_shadow_color="#60F45344"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/withDraw"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/login_buttons"/>
+        </com.gigamole.library.ShadowLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

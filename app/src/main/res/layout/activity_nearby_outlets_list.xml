@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NearbyOutletsListActivity">
+<com.zheng.liuju.view.TitleView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:titleText="@string/nearbyOutlets"/>
+    <include layout="@layout/view_no_data"
+        />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:visibility="gone"
+        android:layout_below="@id/title"
+        android:id="@+id/srp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zheng.liuju.view.PullToRefreshListView
+            android:layoutAnimation="@anim/anim_listview_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rentlist"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null">
+
+        </com.zheng.liuju.view.PullToRefreshListView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.zheng.liuju.view.DragImageView
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/home"/>
+
+</RelativeLayout>

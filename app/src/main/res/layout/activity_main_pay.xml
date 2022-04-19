@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_marginTop="20dp"
+
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="false"
+            android:gravity="center_horizontal"
+           />
+
+        <Button
+            android:text="Formulario simple"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpsdk_button_height"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+
+            android:onClick="runStep1"
+            style="@style/mpsdk_button_normal"/>
+
+        <Button
+            android:text="Tarjetas guardadas"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpsdk_button_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:onClick="runStep2"
+            style="@style/mpsdk_button_normal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpsdk_button_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:onClick="runStep3"
+            style="@style/mpsdk_button_normal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpsdk_button_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:onClick="runStep4"
+            style="@style/mpsdk_button_normal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mpsdk_button_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+
+            android:onClick="runStep5"
+            style="@style/mpsdk_button_normal"/>
+
+    </LinearLayout>
+
+</ScrollView>
